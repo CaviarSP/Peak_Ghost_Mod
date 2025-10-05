@@ -1,0 +1,10 @@
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\obj\shijian\release\shijian.csproj.AssemblyReference.cache
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\obj\shijian\release\shijian.IgnoresAccessChecksTo.cs
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\obj\shijian\release\shijian.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\obj\shijian\release\shijian.AssemblyInfoInputs.cache
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\obj\shijian\release\shijian.AssemblyInfo.cs
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\obj\shijian\release\shijian.csproj.CoreCompileInputs.cache
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\bin\shijian\release\com.github.CaviarSP.shijian.deps.json
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\bin\shijian\release\com.github.CaviarSP.shijian.dll
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\obj\shijian\release\shijian.csproj.Up2Date
+C:\Users\14218\Desktop\PeakMod\shijian\artifacts\obj\shijian\release\com.github.CaviarSP.shijian.dll

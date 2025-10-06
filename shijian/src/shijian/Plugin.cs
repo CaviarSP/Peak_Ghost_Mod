@@ -17,14 +17,17 @@ public partial class Plugin : BaseUnityPlugin
 
     internal static ManualLogSource Log { get; private set; } = null!;
     private ConfigEntry<KeyCode> toggleGhostKey;
+    private ConfigEntry<bool> needCampfire;
 
     private void Awake()
     {
         Log = Logger;
         Log.LogInfo($"Plugin {Name} is loaded!");
         toggleGhostKey = Config.Bind("Hotkeys", "ToggleGhostMode", KeyCode.G, "进入鬼魂模式的按键");
+        needCampfire = Config.Bind("Settings", "NeedCampfire", true, "是否需要在篝火范围内才能进入鬼魂模式");
 
         Logger.LogInfo($"配置的鬼魂模式热键是：{toggleGhostKey.Value}");
+         Logger.LogInfo($"需要在篝火范围内：{needCampfire.Value}");
     }
 
     private void Update()
@@ -45,6 +48,7 @@ public partial class Plugin : BaseUnityPlugin
         Character localCharacter = Character.localCharacter;
         if (localCharacter == null || localCharacter.data.dead) return;
         if (!IsInCampfireRange(localCharacter.Center)) return;
+        if (PlayerHandler.GetAllPlayerCharacters().Count<= 1) return;
 
         PhotonView photonView = localCharacter.GetComponent<PhotonView>();
         if (!photonView.IsMine) return;
@@ -100,6 +104,7 @@ public partial class Plugin : BaseUnityPlugin
                 Debug.Log("Not in campfire range: " + num);
             }
         }
+        if (!needCampfire.Value) flag = true;
         return flag;
     }
 }
